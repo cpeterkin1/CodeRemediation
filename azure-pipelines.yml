@@ -19,6 +19,7 @@ steps:
     npm install -g @angular/cli
     npm install
     npm start
+    ng update --all --force
     ng build
     ng serve
   displayName: 'npm install and build'
