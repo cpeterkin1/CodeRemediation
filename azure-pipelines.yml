@@ -22,5 +22,6 @@ steps:
     npm install -g @angular/cli
     npm install --save-dev @angular-devkit/build-angular
     npm i @angular/compiler-cli
+    npm install --save-dev @angular/cli@latest
     ng serve
   displayName: 'npm install and build'
