@@ -18,6 +18,5 @@ steps:
 - script: |
     npm install -g @angular/cli@latest
     npm install
-    npm init
     ng serve
   displayName: 'npm install and build'
