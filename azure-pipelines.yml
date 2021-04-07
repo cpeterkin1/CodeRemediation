@@ -26,11 +26,6 @@ steps:
     command: 'install'
 
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'run build'
-
 - script: |
     ng serve
   displayName: 'npm install and build'
