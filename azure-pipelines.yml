@@ -3,6 +3,8 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+# ng build -prod
+
 trigger:
 - main
 
@@ -19,5 +21,6 @@ steps:
     npm install
     npm install -g @angular/cli
     npm install --save-dev @angular-devkit/build-angular
+    npm i @angular/compiler-cli
     ng serve
   displayName: 'npm install and build'
