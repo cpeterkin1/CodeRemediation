@@ -16,6 +16,20 @@ steps:
   inputs:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'install @angular/cli@latest'
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run build'
 
 - script: |
     npm install
