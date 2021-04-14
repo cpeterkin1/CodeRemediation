@@ -27,6 +27,7 @@ steps:
 
 
 - script: |
+    cd Front-End
     ls
     npm install -g @angular/cli
     npm install
