@@ -20,7 +20,10 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'cd Front-End'
+    script: |
+      cd Front-end
+      
+      ls
 
 
 - script: |
