@@ -21,7 +21,7 @@ steps:
 - task: CmdLine@2
   inputs:
     script: |
-      cd Front-end
+      cd Front-End
       
       ls
 
