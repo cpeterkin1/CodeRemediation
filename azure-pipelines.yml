@@ -17,6 +17,12 @@ steps:
     versionSpec: '14.x'
   displayName: 'Install Node.js'
 
+
+- task: CmdLine@2
+  inputs:
+    script: 'cd Front-End'
+
+
 - script: |
     npm install -g @angular/cli
     npm install
